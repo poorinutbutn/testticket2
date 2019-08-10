@@ -15,12 +15,12 @@
 
 	.topnav {
   overflow: hidden;
-  background-color: #3399FF;
+  background-color: #333;
 }
 .topnav a {
   float: left;
   display: block;
-  color: #FFFFFF;
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -71,7 +71,7 @@
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #BEBEBE;
+  background-color: #555;
   color: white;
 }
 
@@ -130,34 +130,21 @@ body,td,th {
   resize: vertical;
 }
 	input[type=submit] {
-  background-color: #ffff59;
-  color: black;
-  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 </style>
-<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
-<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
-<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
 <body class="w3-light-gray">
 
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">หน้าหลัก</a>
-	<a href="#contact">สถานะการเดินทางGPS</a>
-	<a href="#contact">สถานที่ท่องเที่ยวแนะนำ</a>
-  <div class="dropdown">
-    <button class="dropbtn">มาตรฐานรถทัวร์<i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="https://www.rentalcars.com/">rentalcars</a>
-      <a href="http://www.ttanddgroup.com">ttanddgroup</a>
-      <a href="https://www.skyscanner.co.th">skyscanner</a>
-    </div>
-  </div> 
+  <a href="#news">มาตรฐานรถทัวร์</a>
+  <a href="#contact">สถานที่ท่องเที่ยวแนะนำ</a>
+  <a href="#contact">แผนที่เดินรถ</a>
   <div class="dropdown">
     <button class="dropbtn">จัดหาเช่ารถยนต์
       <i class="fa fa-caret-down"></i>
@@ -199,22 +186,27 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Header -->
   <header class="w3-container w3-center w3-padding-48 w3-white">
     <h1 class="w3-xxxlarge"><strong></strong>THE DEVELOPMENT OF BUS TICKET COMPARISON</h1>
-    <h6>เว็บแอพพลิเคชั่นบริการเปรียบเทียบ<span class=" w3-blue w3-tag">ราคาตั๋วรถทัวร์ </span></h6>
+    <h6>เว็บแอพพลิเคชั่นบริการเปรียบเทียบ<span class="w3-tag">ราคาตั๋วรถทัวร์ </span></h6>
   </header>
 	
-	<header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="../image/banner.jpg" alt="Fashion Blog" width="1349" height="500">
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+    <img class="w3-image" src="../image/11.png" alt="The Hotel" style="min-width:1000px" width="1349" height="500">
     <div class="w3-display-left w3-padding-large">
-  
-      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>FASHION BLOG</b></h1>
-      <table width="300" border="0" cellspacing="0" cellpadding="0">
+     <form action="file:///C:/Users/sunie/OneDrive/%E0%B9%80%E0%B8%94%E0%B8%AA%E0%B8%81%E0%B9%8C%E0%B8%97%E0%B9%87%E0%B8%AD%E0%B8%9B/pjeastticket/ticketbus.html" method="post" name="form1" target="_parent" class="fa" id="form1" onsubmit="return doSubmit(this);">
+					  <input type="hidden" name="appkey" value="f83956c5260d33981935c9e80d1a5a5d" />
+					  <input type="hidden" name="adult" value="1" />
+					  <input type="hidden" name="busstd" value="all" />
+          <table width="200" border="0" cellspacing="0" cellpadding="0">
+                          
+          </table>                
+          <table width="200" border="0" cellspacing="0" cellpadding="0">
                     <tr>
-                      <td height="20" align="left"></td>
+                      <td height="20" align="left"><span>จังหวัดต้นทาง:</span></td>
                     </tr>
                     <tr>
                       <td align="left"><div align="left">
-                        <select name="departcity" id="departcity" onChange="dispterminal(this.value,'departterminal')" style="width:300px;font-size:20px;">
-                          <option value="">- จังหวัดต้นทาง -</option>
+                        <select name="departcity" id="departcity" onChange="dispterminal(this.value,'departterminal')" style="width:200px;font-family:Tahoma;font-size:12px;">
+                          <option value="">--กรุณาเลือก--</option>
   <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option><option value="กระบี่">กระบี่</option><option value="กาญจนบุรี">กาญจนบุรี</option><option value="กาฬสินธุ์">กาฬสินธุ์</option><option value="กำแพงเพชร">กำแพงเพชร</option><option value="ขอนแก่น">ขอนแก่น</option><option value="จันทบุรี">จันทบุรี</option><option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option><option value="ชลบุรี">ชลบุรี</option><option value="ชัยภูมิ">ชัยภูมิ</option><option value="ชุมพร">ชุมพร</option><option value="เชียงราย">เชียงราย</option><option value="เชียงใหม่">เชียงใหม่</option><option value="ตรัง">ตรัง</option><option value="ตราด">ตราด</option><option value="ตาก">ตาก</option><option value="นครนายก">นครนายก</option><option value="นครปฐม">นครปฐม</option><option value="นครพนม">นครพนม</option><option value="นครราชสีมา">นครราชสีมา</option><option value="นครศรีธรรมราช">นครศรีธรรมราช</option><option value="นครสวรรค์">นครสวรรค์</option><option value="นราธิวาส">นราธิวาส</option><option value="น่าน">น่าน</option><option value="บึงกาฬ">บึงกาฬ</option><option value="บุรีรัมย์">บุรีรัมย์</option><option value="ปทุมธานี">ปทุมธานี</option><option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option><option value="ปราจีนบุรี">ปราจีนบุรี</option><option value="พะเยา">พะเยา</option><option value="พังงา">พังงา</option><option value="พัทลุง">พัทลุง</option><option value="พิษณุโลก">พิษณุโลก</option><option value="เพชรบุรี">เพชรบุรี</option><option value="เพชรบูรณ์">เพชรบูรณ์</option><option value="แพร่">แพร่</option><option value="ภูเก็ต">ภูเก็ต</option><option value="มหาสารคาม">มหาสารคาม</option><option value="มุกดาหาร">มุกดาหาร</option><option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option><option value="ยโสธร">ยโสธร</option><option value="ร้อยเอ็ด">ร้อยเอ็ด</option><option value="ระนอง">ระนอง</option><option value="ระยอง">ระยอง</option><option value="ราชบุรี">ราชบุรี</option><option value="ลำปาง">ลำปาง</option><option value="ลำพูน">ลำพูน</option><option value="เลย">เลย</option><option value="ศรีสะเกษ">ศรีสะเกษ</option><option value="สกลนคร">สกลนคร</option><option value="สงขลา">สงขลา</option><option value="สตูล">สตูล</option><option value="สมุทรสาคร">สมุทรสาคร</option><option value="สระแก้ว">สระแก้ว</option><option value="สระบุรี">สระบุรี</option><option value="สุโขทัย">สุโขทัย</option><option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option><option value="สุรินทร์">สุรินทร์</option><option value="หนองคาย">หนองคาย</option><option value="หนองบัวลำภู">หนองบัวลำภู</option><option value="อำนาจเจริญ">อำนาจเจริญ</option><option value="อุดรธานี">อุดรธานี</option><option value="อุตรดิตถ์">อุตรดิตถ์</option><option value="อุบลราชธานี">อุบลราชธานี</option>  
                         </select>
                         </div>  </td>
@@ -223,27 +215,46 @@ and is wrapped around the whole page content, except for the footer in this exam
                       <td height="15" align="left">&nbsp;</td>
                     </tr>
                     <tr>
+                      <td height="20" align="left"><span>จังหวัดปลายทาง:</span></td>
+                    </tr>
+                    <tr>
                       <td align="left">
                         <div align="left" id="returncitydisp">
                           
-                          <select name="arrivecity" id="arrivecity" onChange="dispterminal(this.value,'arriveterminal')" style="width:300px;;font-size:20px;">
-                            <option value="">- จังหวัดปลายทาง -</option>
+                          <select name="arrivecity" id="arrivecity" onChange="dispterminal(this.value,'arriveterminal')" style="width:200px;font-family:Tahoma;font-size:12px;">
+                            <option value="">--กรุณาเลือก--</option>
                             <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option><option value="กระบี่">กระบี่</option><option value="กาญจนบุรี">กาญจนบุรี</option><option value="กาฬสินธุ์">กาฬสินธุ์</option><option value="กำแพงเพชร">กำแพงเพชร</option><option value="ขอนแก่น">ขอนแก่น</option><option value="จันทบุรี">จันทบุรี</option><option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option><option value="ชลบุรี">ชลบุรี</option><option value="ชัยภูมิ">ชัยภูมิ</option><option value="ชุมพร">ชุมพร</option><option value="เชียงราย">เชียงราย</option><option value="เชียงใหม่">เชียงใหม่</option><option value="ตรัง">ตรัง</option><option value="ตราด">ตราด</option><option value="ตาก">ตาก</option><option value="นครนายก">นครนายก</option><option value="นครปฐม">นครปฐม</option><option value="นครพนม">นครพนม</option><option value="นครราชสีมา">นครราชสีมา</option><option value="นครศรีธรรมราช">นครศรีธรรมราช</option><option value="นครสวรรค์">นครสวรรค์</option><option value="นราธิวาส">นราธิวาส</option><option value="น่าน">น่าน</option><option value="บึงกาฬ">บึงกาฬ</option><option value="บุรีรัมย์">บุรีรัมย์</option><option value="ปทุมธานี">ปทุมธานี</option><option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์</option><option value="ปราจีนบุรี">ปราจีนบุรี</option><option value="พะเยา">พะเยา</option><option value="พังงา">พังงา</option><option value="พัทลุง">พัทลุง</option><option value="พิษณุโลก">พิษณุโลก</option><option value="เพชรบุรี">เพชรบุรี</option><option value="เพชรบูรณ์">เพชรบูรณ์</option><option value="แพร่">แพร่</option><option value="ภูเก็ต">ภูเก็ต</option><option value="มหาสารคาม">มหาสารคาม</option><option value="มุกดาหาร">มุกดาหาร</option><option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option><option value="ยโสธร">ยโสธร</option><option value="ร้อยเอ็ด">ร้อยเอ็ด</option><option value="ระนอง">ระนอง</option><option value="ระยอง">ระยอง</option><option value="ราชบุรี">ราชบุรี</option><option value="ลำปาง">ลำปาง</option><option value="ลำพูน">ลำพูน</option><option value="เลย">เลย</option><option value="ศรีสะเกษ">ศรีสะเกษ</option><option value="สกลนคร">สกลนคร</option><option value="สงขลา">สงขลา</option><option value="สตูล">สตูล</option><option value="สมุทรสาคร">สมุทรสาคร</option><option value="สระแก้ว">สระแก้ว</option><option value="สระบุรี">สระบุรี</option><option value="สุโขทัย">สุโขทัย</option><option value="สุราษฎร์ธานี">สุราษฎร์ธานี</option><option value="สุรินทร์">สุรินทร์</option><option value="หนองคาย">หนองคาย</option><option value="หนองบัวลำภู">หนองบัวลำภู</option><option value="อำนาจเจริญ">อำนาจเจริญ</option><option value="อุดรธานี">อุดรธานี</option><option value="อุตรดิตถ์">อุตรดิตถ์</option><option value="อุบลราชธานี">อุบลราชธานี</option>
                           </select>
                         </div></td>
                     </tr>
                     <tr>
-                      <td height="15" align="left">&nbsp;</td>
+                      <td height="15" align="left"><hr width="100%"></td>
                     </tr>
-      </table>
+        </table>
+	    				
+          <table width="200" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td align="left"></td>
+                      </tr>
+          </table>
+          <table width="200" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td height="30" align="left"><div align="center" > 
+                        <input type="submit" name="Submit" value="  ค้นหาเที่ยวรถ  " style="font-family:Tahoma;font-size:13px;"> <a href = "https://www.busticket.in.th/">                   
+                      </div></td>
+            </tr>
+          </table>
+                
+				  
+      </form>
     </div>
   </header>
-<!-- Grid --></div>
-    
+  <!-- Grid -->
+ 
     
       <!-- About Card --><!-- Posts -->
       <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-yellow">
+        <div class="w3-container w3-padding w3-orange">
           <h4>เส้นทางแนะนำ</h4>
         </div>
         <ul class="w3-ul w3-hoverable w3-white">
@@ -270,8 +281,8 @@ and is wrapped around the whole page content, except for the footer in this exam
         </ul>
       </div>
 
-      
-    </div>
+      <!-- Advertising --><!-- Tags --><!-- Inspiration --><!-- Subscribe --><!-- END About/Intro Menu -->
+</div>
 
   <!-- END GRID -->
   </div>
@@ -291,24 +302,10 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
   </div>
 </div>
-	
-<div class="w3-row-padding w3-center w3-white w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-white">
-        <p></i><img src="https://www.busticket.in.th/img/transport-tcl.png" height="60px" alt="บริษัท ขนส่ง จำกัด"></p>
-        <p>email@email.com</p>
-      </div>
-      <div class="w3-third w3-teal">
-        <p></i><img src="https://www2.nakhonchaiair.com/assets/img/logo.png" style="width:190px;"></p>
-        <p>Chicago, US</p>
-      </div>
-      <div class="w3-third w3-white">
-        <p></i></p>
-        <p>5123<img src="https://sombattour.com/addons/shared_addons/themes/sbt/images/logo.png" width="130" height="43" alt="">12311</p>
-      </div>
-    </div>
+<div class="w3-content" style="max-width:1532px;">
 </body>
 	
-	<footer class="w3-center w3-blue w3-padding-16">
+	<footer class="w3-center w3-black w3-padding-16">
   <p>© 2019 THE DEVELOPMENT OF BUS TICKET COMPARISON APPLICATION WEB ALL RIGHTS RESERVE</p>
 </footer>
 
