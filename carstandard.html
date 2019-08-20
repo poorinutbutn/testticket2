@@ -120,12 +120,53 @@ body,td,th {
 	font-size: 20px;
 	font-weight: bold;}
 </style>
-<body class="w3-light-gray">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<body class="w3-light-gray" onLoad="MM_preloadImages('image/รถ VIP ม.1ก 24ที่.jpg','image/รถ VIP ( รถ 2 ชั้น ) ม.4ก 30-32ที่.jpg','image/รถปรับอากาศชั้น 1 ม.1ข 38-40ที่.jpg','image/รถปรับอากาศชั้น 1 พิเศษ ( รถ 2 ชั้น ) ม.4พ 40ที่.jpg','image/รถปรับอากาศชั้น 1 ( รถ 2 ชั้น ) ม.4ข 46-50 ที่.jpg','image/รถปรับอากาศชั้น 2 ( รถ 2 ชั้น ) ม.4ค54ที่.jpg')">
 
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">หน้าหลัก</a>
-  <a href="#news">มาตรฐานรถทัวร์</a>
-  <a href="#contact">สถานที่ท่องเที่ยวแนะนำ</a>
+  <a href="indexxxxxx.html" class="active">หน้าหลัก</a>
+	<div class="dropdown">
+    <button class="dropbtn">มาตรฐานรถทัวร์
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="carstandardb.html">บริษัท บขส</a>
+		<a href="carstandard.html">บริษัท สมบัติทัวร์</a>
+      <a href="carstandardn.html">บริษัท นครชัยแอร์</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">สถานที่ท่องเที่ยวแนะนำ
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="traveln.html">ภาคเหนือ</a>
+      <a href="travel.html">ภาคใต้</a>
+    </div>
+  </div> 
+  <a href="openmap.html">ติดตามการเดินทาง GPS</a>
   <div class="dropdown">
     <button class="dropbtn">จัดหาเช่ารถยนต์
       <i class="fa fa-caret-down"></i>
@@ -148,7 +189,7 @@ body,td,th {
   </div> 
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
+	
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -167,18 +208,41 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Header -->
 <header class="w3-container w3-center w3-padding-48 w3-white">
     <h1 class="w3-xxxlarge"><strong></strong>THE DEVELOPMENT OF BUS TICKET COMPARISON</h1>
-    <h6>เว็บแอพพลิเคชั่นบริการเปรียบเทียบ<span class="w3-tag w3-blue">ราคาตั๋วรถทัวร์ </span></h6>
   </header>
 <body>
 	
     <h1 style="background-color:rgb(2, 177, 255);"><img src="https://sombattour.com/addons/shared_addons/themes/sbt/images/logo.png" width="130" height="43" alt="">มาตรฐานรถทัวร์ สมบัติทัวร์ </h1>
   <p>&nbsp;</p>
 <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="image/รถทัวร์ลีมูซีน 15 เมตร (ม1ก) สม.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','image/รถ VIP ม.1ก 24ที่.jpg',1)"><img src="image/Supreme Class (ม1ก) สม.jpg" alt="" width="428" height="350" id="Image1"></a>
       
 		<div class="w3-container w3-white">
-        <p><b><h3>รถทัวร์ลีมูซีน 15 เมตร (ม1ก)</h3></b></p>
+          <p><b><h3>Supreme Class (ม1ก)</h3></b></p>
+        <p>
+                        <strong>คุณลักษณะ</strong>
+          <ul>
+ <li>รถโดยสารปรับอากาศ 1 ชั้น</li>
+						<li>การจัดวางเก้าอี้ ด้านซ้าย 1 ที่นั่ง &nbsp; &nbsp; &nbsp;ด้านขวา 2 ที่นั่ง</li>
+						<li>เก้าอี้ปรับเอนนอนได้ 135 องศา</li>
+						<li>เก้าอี้แบบมีที่รองน่อง</li>
+						<li>เก้าอี้นวดไฟฟ้า</li>
+          </ul>
+                        <strong>การบริการ</strong>
+                            <ul>
+                                <li> พนักงานต้อนรับ</li>
+								<li>พนักงานบริกร</li>
+                                <li> อาหาร และเครื่องดื่ม</li>
+								<li> อาหารบุฟเฟ่ต์ ณ จุดพักรถ
+*** หมายเหตุ:ยกเว้นเส้นทาง     กรุงเทพฯ-หัวหิน มีเฉพาะ
+ เครื่องดื่มบนรถ</li>
+                            </ul>         
+                        </p>
+      </div>
+		
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','image/รถ VIP ม.1ก 24ที่.jpg',1)"><img src="image/รถทัวร์ลีมูซีน 15 เมตร (ม1ก) สม.jpg" alt="" width="428" height="350" id="Image2"></a>
+      <div class="w3-container w3-white">
+           <p><b><h3>รถทัวร์ลีมูซีน 15 เมตร (ม1ก)</h3></b></p>
         <p>
           <strong>คุณลักษณะ</strong>
           <ul>
@@ -193,37 +257,14 @@ and is wrapped around the whole page content, except for the footer in this exam
            <li> พนักงานต้อนรับ</li>
 				<li>พนักงานบริกร</li>
              <li> อาหาร และเครื่องดื่ม</li>
+				             <li> อาหารบุฟเฟ่ต์ ณ จุดพักรถ</li>
             </ul>         
           </p>
 
-      </div>
-		
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="image/Supreme Class (ม1ก) สม.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b><h3>Supreme Class (ม1ก)</h3></b></p>
-        <p>
-                        <strong>คุณลักษณะ</strong>
-          <ul>
- <li>ถโดยสารปรับอากาศ 1 ชั้น</li>
-						<li>การจัดวางเก้าอี้ ด้านซ้าย 1 ที่นั่ง &nbsp; &nbsp; &nbsp;ด้านขวา 2 ที่นั่ง</li>
-						<li>เก้าอี้ปรับเอนนอนได้ 135 องศา</li>
-						<li>เก้าอี้แบบมีที่รองน่อง</li>
-						<li>เก้าอี้นวดไฟฟ้า</li>
-          </ul>
-                        <strong>การบริการ</strong>
-                            <ul>
-                                <li> พนักงานต้อนรับ</li>
-								<li>พนักงานบริกร</li>
-                                <li> อาหาร และเครื่องดื่ม</li>
-                            </ul>         
-                        </p>
 
       </div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="image/Supreme Class (ม4ก) สม.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','image/รถ VIP ( รถ 2 ชั้น ) ม.4ก 30-32ที่.jpg',1)"><img src="image/Supreme Class (ม4ก) สม.jpg" alt="" width="428" height="350" id="Image3"></a>
       <div class="w3-container w3-white">
         <p><b><h3>Supreme Class (ม4ก)</h3></b></p>
      <p>
@@ -240,6 +281,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                                <li> พนักงานต้อนรับ</li>
 								<li>พนักงานบริกร</li>
                                 <li> อาหาร และเครื่องดื่ม</li>
+								<li> อาหารบุฟเฟ่ต์ ณ จุดพักรถ</li>
                             </ul>         
                         </p>
 
@@ -249,8 +291,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
   </div>
 	<div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="image/Super Class (ม1พ).jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','image/รถปรับอากาศชั้น 1 ม.1ข 38-40ที่.jpg',1)"><img src="image/Super Class (ม1พ).jpg" alt="" width="428" height="350" id="Image4"></a>
       <div class="w3-container w3-white">
         <p><b><h3>Super Class (ม1พ)</h3></b></p>
        <p>
@@ -267,13 +308,13 @@ and is wrapped around the whole page content, except for the footer in this exam
                          <li> พนักงานต้อนรับ</li>
 								<li>พนักงานบริกร</li>
                                 <li> อาหาร และเครื่องดื่ม</li>
-                            </ul>         
+								 <li> อาหารบุฟเฟ่ต์ ณ จุดพักรถ (ยกเว้นเส้นทางสายอีสาน)</li> 
+		  </ul>
                         </p>
 
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="image/Super Class (ม4พ) สม.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','image/รถปรับอากาศชั้น 1 พิเศษ ( รถ 2 ชั้น ) ม.4พ 40ที่.jpg',1)"><img src="image/Super Class (ม4พ) สม.jpg" alt="" width="428" height="350" id="Image5"></a>
       <div class="w3-container w3-white">
         <p><b><h3>Super Class (ม4พ)</h3></b></p>
         <p>
@@ -290,13 +331,13 @@ and is wrapped around the whole page content, except for the footer in this exam
                                <li> พนักงานต้อนรับ</li>
 								<li>พนักงานบริกร</li>
                                 <li> อาหาร และเครื่องดื่ม</li>
+								 <li> อาหารบุฟเฟ่ต์ ณ จุดพักรถ (ยกเว้นเส้นทางสายอีสาน)</li>
                             </ul>         
                         </p>
 
       </div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="image/Star Class (ม1ข) สม.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','image/รถปรับอากาศชั้น 1 ม.1ข 38-40ที่.jpg',1)"><img src="image/Star Class (ม1ข) สม.jpg" alt="" width="428" height="350" id="Image6"></a>
       <div class="w3-container w3-white">
         <p><b><h3>Star Class (ม1ข)</h3></b></p>
          <p>
@@ -312,7 +353,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                                <li> พนักงานต้อนรับ</li>
 								<li>พนักงานบริกร</li>
                                 <li> อาหาร และเครื่องดื่ม</li>
-							
+							<li> อาหารจานเดียว ณ จุดพักรถ</li>
                             </ul>         
                         </p>
 
@@ -320,8 +361,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     </div>
   </div>
 	<div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="image/Star Class (ม4ข) สม.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','image/รถปรับอากาศชั้น 1 ( รถ 2 ชั้น ) ม.4ข 46-50 ที่.jpg',1)"><img src="image/Star Class (ม4ข) สม.jpg" alt="" width="428" height="350" id="Image7"></a>
       <div class="w3-container w3-white">
         <p><b><h3>Star Class (ม4ข)</h3></b></p>
         <p>
@@ -337,13 +377,13 @@ and is wrapped around the whole page content, except for the footer in this exam
                              <li> พนักงานต้อนรับ</li>
 							  <li>พนักงานบริกร</li>
                                 <li> อาหาร และเครื่องดื่ม</li>
+								<li> อาหารจานเดียว ณ จุดพักรถ</li>
                             </ul>         
                         </p>
 
       </div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="image/Smart Class (ม4ค) สม.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-third w3-container w3-margin-bottom"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','image/รถปรับอากาศชั้น 2 ( รถ 2 ชั้น ) ม.4ค54ที่.jpg',1)"><img src="image/Smart Class (ม4ค) สม.jpg" alt="" width="428" height="350" id="Image8"></a>
       <div class="w3-container w3-white">
         <p><b><h3>Smart Class (ม4ค)</h3></b></p>
          <p>
@@ -367,7 +407,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   </div>
 </div>
 	
-	<footer class="w3-center w3-black w3-padding-16">
+	<footer class="w3-center w3-blue w3-padding-16">
   <p>© 2019 THE DEVELOPMENT OF BUS TICKET COMPARISON APPLICATION WEB ALL RIGHTS RESERVE</p>
 </footer>
 
